@@ -1,14 +1,17 @@
 #include <stdio.h>
 
 void func(int x) {
+    printf("x = %d\n", x); // Before
+    printf("Address of func function: %p\n", &x);
     x = 20;
+    printf("x = %d\n", x); // After
     printf("Address of func function: %p\n", &x);
 }
 
 int main() {
-    int x = 10;
-    func(x); // Pass by value
-    printf("%d\n", x);
-    printf("Address of main function: %p\n", &x);
+    int a = 10;
+    func(a); // Pass by value
+    printf("a = %d\n", a);
+    printf("Address of main function: %p\n", &a);
     return 0;
 }
