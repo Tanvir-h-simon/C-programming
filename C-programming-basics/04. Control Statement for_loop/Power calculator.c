@@ -44,4 +44,4 @@ Condition: i < exponent => 3 < 3 (False)
 The loop terminates because the condition i < exponent is no longer true (3 is not less than 3).
 Final State:
 result = 8
-The result 8 is the value of 2^3.
+The result 8 is the value of 2^3. */
